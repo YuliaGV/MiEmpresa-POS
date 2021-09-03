@@ -53,6 +53,24 @@
 
                 $categorias = ControladorCategorias::ctrMostrarCategorias($item, $valor);
 
+                foreach ($categorias as $key => $value) {
+
+                  echo '<tr>
+                            <td>'.($value['cat_id']).'</td>
+                            <td>'.($value['cat_nombre']).'</td>
+
+                            <td> 
+                            <div class="btn-group">
+                            <button class="btn btn-warning btnEditarCategoria" idCategoria="'.$value["cat_id"].'" data-toggle="modal" data-target="#modalEditarCategoria"><i class="fa fa-edit"></i></button>
+                            <button class="btn btn-danger btnEliminarCategoria" idCategoria="'.$value["cat_id"].'"><i class="fa fa-trash-alt"></i></button>
+    
+                          </div>  
+                            </td>
+                        </tr>';  
+                        
+
+                }
+
               ?>
 
             </tbody>
@@ -135,6 +153,7 @@
                     <div class="form-group row">
                       <label for="editarCategoria" class="col-sm-2 col-form-label">Nombre</label>
                       <div class="col-sm-10">
+                        <input type="hidden" id="idCategoria" name="idCategoria" value="">
                         <input type="text" class="form-control input-lg" id="editarCategoria" name="editarCategoria" value="">
                       </div>
                     </div>
@@ -148,9 +167,25 @@
                   <button type="submit" class="btn btn-primary">Modificar categoría</button>
                 </div>
 
+                <?php
+
+                  $editarCategoria = new ControladorCategorias();
+                  $editarCategoria -> ctrEditarCategoria();
+
+                ?>
+
               
                 </form>
-             
+
+                
+              <?php 
+
+                $borrarCategoria = new ControladorCategorias();
+                $borrarCategoria-> ctrBorrarCategoria();
+
+              ?>
+            
+
             </div>
         </div>
   </div> 
