@@ -19,13 +19,32 @@
 
 					<?php
 
-					if($_SESSION["us_foto"] != ""){
-						echo '<img src="'.$_SESSION["us_foto"].'" class="user-image">';
-					}else{
-						echo '<img src="vistas/img/usuarios/default/anonymous.png" class="user-image">';
-					}
+
+              $item = "us_id";
+              $valor = $_SESSION["us_id"];
+
+              $usuarios = ControladorUsuarios::ctrMostrarUsuarios($item, $valor);
+
+              if($usuarios["us_foto"]){
+
+                echo '<img src="'.$usuarios["us_foto"].'" class="user-image" alt="User Image">';
+
+              }else{
+
+                echo '<img src="vistas/img/usuarios/default/anonymous.png" class="user-image" alt="User Image">';
+
+              }
+
+              
+              if($usuarios["us_nombre"] ){
+                echo '<span class="hidden-xs text-white"">'.$usuarios["us_nombre"].'</span>';
+              } else {
+                echo '<span class="hidden-xs text-white"">Usuario</span>';
+              }
+              
+                
+
 					?>
-						<span class="hidden-xs text-white"><?php  echo $_SESSION["us_nombre"]; ?></span>
 
 					</a>
 
