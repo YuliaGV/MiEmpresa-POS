@@ -28,22 +28,46 @@ session_start();
 
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     
-    <link rel="stylesheet" href="vistas/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!--datables CSS básico-->
     <link rel="stylesheet" type="text/css" href="vistas/plugins/datatables/datatables.min.css"/>
-        <!--datables estilo bootstrap 4 CSS-->  
+    <!--datables estilo bootstrap 4 CSS-->  
     <link rel="stylesheet"  type="text/css" href="vistas/plugins/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"> 
 
     <link rel="stylesheet"  type="text/css" href=" vistas/plugins/datatables-responsive/css/responsive.bootstrap4.css"> 
 
     <link rel="stylesheet"  type="text/css" href="vistas/plugins/sweetalert2/sweetalert2.min.css"> 
 
-    <!-- SweetAlert JS -->
-
-    <script type="text/javascript" src="vistas/plugins/sweetalert2/sweetalert2.all.js"></script> 
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="vistas/plugins/iCheck/all.css">
 
 
     <link rel="stylesheet" href="vistas/css/styles.css">
+
+
+    <!-- jQuery -->
+    <script src="vistas/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="vistas/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="vistas/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="vistas/dist/js/adminlte.min.js"></script>
+
+    <!-- datatables JS -->
+    <script type="text/javascript" src="vistas/plugins/datatables/datatables.js"></script>
+
+    <script type="text/javascript" src="vistas/plugins/datatables-responsive/js/dataTables.responsive.js"></script> 
+
+    <!-- SweetAlert JS -->
+    <script type="text/javascript" src="vistas/plugins/sweetalert2/sweetalert2.all.js"></script> 
+
+    <!-- iCheck 1.0.1 -->
+    <script src="vistas/plugins/iCheck/icheck.min.js"></script>
+
+
+
+
+
 
 </head>
 
@@ -106,19 +130,6 @@ session_start();
 
 
 
-<!-- jQuery -->
-<script src="vistas/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="vistas/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<script src="vistas/plugins/bootstrap/js/bootstrap.min.js"></script>
-<!-- AdminLTE App -->
-<script src="vistas/dist/js/adminlte.min.js"></script>
-
-<!-- datatables JS -->
-<script type="text/javascript" src="vistas/plugins/datatables/datatables.js"></script>
-
-<script type="text/javascript" src="vistas/plugins/datatables-responsive/js/dataTables.responsive.js"></script> 
 
 
 <script src="vistas/js/plantilla.js"></script>
@@ -126,6 +137,10 @@ session_start();
 <script src="vistas/js/usuarios.js"></script>
 
 <script src="vistas/js/categorias.js"></script>
+
+<script src="vistas/js/productos.js"></script>
+
+
 
 </body>
 

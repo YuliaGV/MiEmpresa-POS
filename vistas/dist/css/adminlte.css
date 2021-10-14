@@ -20207,6 +20207,8 @@ html.maximized-card {
   -ms-flex-align: center;
   align-items: center;
   background: #e9ecef;
+  background-image: url(../../img/Fondo1.jpg);
+  background-size: cover;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;

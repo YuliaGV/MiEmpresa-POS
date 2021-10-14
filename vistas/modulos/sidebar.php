@@ -8,7 +8,14 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-    
+
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="info">
+            <p class="d-block text-white">¿Qué quieres hacer hoy?</p>
+            
+          </div>
+        </div>
+      
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">

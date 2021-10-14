@@ -1,5 +1,5 @@
 # MiEmpresa-POS
-PHP bajo el patrón MVC- JS(AJAX) -MySQL - Sistema POS 
+PHP bajo el patrón MVC- JS(AJAX) -MySQL - Sistema POS (En desarrollo)
 
 
 Características

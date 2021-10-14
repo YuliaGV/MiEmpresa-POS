@@ -58,7 +58,7 @@ class ControladorCategorias{
 
 						if(result.value){
 						
-							window.location = "usuarios";
+							window.location = "categorias";
 
 						}
 

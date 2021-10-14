@@ -1,6 +1,6 @@
 //Editar categoría
 
-$(document).on("click", ".btnEeditarCategoria", function(){
+$(document).on("click", ".btnEditarCategoria", function(){
 
     var idCategoria = $(this).attr("idCategoria");
     var datos = new FormData();

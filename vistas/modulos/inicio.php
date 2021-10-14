@@ -23,7 +23,7 @@
 
       <!-- Default box -->
       <div class="col-sm-6">
-        <p>MiEmpresa, tu sistema POS. ¿Qué quieres hacer hoy?</p>
+        <p>MiEmpresa, tu sistema POS</p>
       </div>
       
     </section>

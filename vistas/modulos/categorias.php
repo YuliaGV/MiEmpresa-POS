@@ -55,20 +55,20 @@
 
                 foreach ($categorias as $key => $value) {
 
-                  echo '<tr>
-                            <td>'.($value['cat_id']).'</td>
-                            <td>'.($value['cat_nombre']).'</td>
+                  echo '<tr>'; 
 
-                            <td> 
-                            <div class="btn-group">
+                    echo '<td>'.($key+1).'</td>';
+
+                    echo '<td>'.$value["cat_nombre"].'</td>';
+
+                    echo '<td>
+
+                        <div class="btn-group">
                             <button class="btn btn-warning btnEditarCategoria" idCategoria="'.$value["cat_id"].'" data-toggle="modal" data-target="#modalEditarCategoria"><i class="fa fa-edit"></i></button>
                             <button class="btn btn-danger btnEliminarCategoria" idCategoria="'.$value["cat_id"].'"><i class="fa fa-trash-alt"></i></button>
-    
-                          </div>  
-                            </td>
-                        </tr>';  
+                        </div> 
                         
-
+                      </td>';
                 }
 
               ?>
@@ -88,7 +88,7 @@
 
   <!-- /.content-wrapper -->
 
-  <!-- Modal para agregar usuarios -->
+  <!-- Modal para agregar categorías -->
 
   <div id="modalAgregarCategoria" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -134,7 +134,7 @@
         </div>
     </div> 
 
-  <!-- Modal para editar usuarios -->
+  <!-- Modal para editar categorías -->
 
   <div id="modalEditarCategoria" class="modal fade" role="dialog">
     <div class="modal-dialog">

@@ -62,16 +62,16 @@
 
                   echo "<tr>";
 
-                    echo '<td>'.$value["us_id"].'</td>';
+                    echo '<td>'.($key+1).'</td>';
 
                     echo '<td>'.$value["us_nombre"].'</td>';
 
                     echo '<td>'.$value["us_usuario"].'</td>';
 
                     if($value["us_foto"] != ""){
-                      echo '<td><img src="'.$value["us_foto"].'" class="img-thumbnail" width="40px"></td>';
+                      echo '<td><img src="'.$value["us_foto"].'" class="img-thumbnail" width="50px"></td>';
                     }else{
-                      echo '<td><img src="vistas/img/usuarios/anonymous.png" class="img-thumbnail" width="40px"></td>';
+                      echo '<td><img src="vistas/img/usuarios/anonymous.png" class="img-thumbnail" width="50px"></td>';
                     }
   
                     echo '<td>'.$value["us_perfil"].'</td>';
